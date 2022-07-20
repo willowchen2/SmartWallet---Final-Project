@@ -209,7 +209,7 @@
         <!--Investing-->
         <scene sceneID="9Tj-pJ-3t6">
             <objects>
-                <viewController title="Investing" id="nxy-yt-uCH" sceneMemberID="viewController">
+                <viewController title="Investing" id="nxy-yt-uCH" customClass="InvestmentsViewController" customModule="Smart_Wallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n1u-Zl-nZA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -226,32 +226,60 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="What's the stock market? "/>
+                                <connections>
+                                    <action selector="StockMarket:" destination="J6E-ik-wGQ" eventType="touchUpInside" id="MZG-Pk-bqw"/>
+                                    <action selector="stockMarket:" destination="nxy-yt-uCH" eventType="touchUpInside" id="OhO-hK-PZW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RX0-VR-PNr">
-                                <rect key="frame" x="155" y="254" width="106" height="31"/>
+                                <rect key="frame" x="155" y="243" width="106" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Why invest? "/>
+                                <connections>
+                                    <action selector="whyInvest:" destination="nxy-yt-uCH" eventType="touchUpInside" id="XFe-UC-MIR"/>
+                                    <action selector="whyInvest:" destination="J6E-ik-wGQ" eventType="touchUpInside" id="ypJ-TV-uvP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAO-35-1Vj">
-                                <rect key="frame" x="93" y="345" width="231" height="31"/>
+                                <rect key="frame" x="93" y="317" width="231" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="How can I invest as a beginner? "/>
+                                <connections>
+                                    <action selector="howToInvest:" destination="nxy-yt-uCH" eventType="touchUpInside" id="Lkt-Wc-Ycn"/>
+                                    <action selector="howToInvest:" destination="J6E-ik-wGQ" eventType="touchUpInside" id="wfy-de-XBe"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2D-BS-6BB">
-                                <rect key="frame" x="130" y="443" width="157" height="31"/>
+                                <rect key="frame" x="129" y="390" width="157" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Additional resources"/>
+                                <connections>
+                                    <action selector="additionalResources:" destination="J6E-ik-wGQ" eventType="touchUpInside" id="9vg-RO-JN0"/>
+                                    <action selector="additionalResources:" destination="nxy-yt-uCH" eventType="touchUpInside" id="yUN-ew-Msn"/>
+                                </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rZh-jX-3Kt">
+                                <rect key="frame" x="84" y="501" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3ww-hv-swN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="4ol-bM-gJ6"/>
+                    <connections>
+                        <outlet property="info" destination="rZh-jX-3Kt" id="Fda-wi-DYZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fq6-hA-Auu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="J6E-ik-wGQ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1495.6521739130435" y="67.633928571428569"/>
         </scene>
