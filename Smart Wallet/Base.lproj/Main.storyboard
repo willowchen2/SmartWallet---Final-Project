@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,9 +11,9 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Smart_Wallet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="Smart_Wallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="6866112_preview" translatesAutoresizingMaskIntoConstraints="NO" id="5yv-IN-FQS">
@@ -24,16 +23,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6S-0v-WIP">
                                 <rect key="frame" x="55" y="442" width="119" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="About Us">
-                                            <attributes>
-                                                <font key="NSFont" size="23" name="Helvetica"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </buttonConfiguration>
+                                <state key="normal" title="About"/>
                                 <connections>
                                     <segue destination="Tbz-fn-9uK" kind="show" id="PLv-9b-xs5"/>
                                 </connections>
@@ -41,24 +31,15 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IaE-tU-lwv">
                                 <rect key="frame" x="219" y="391" width="150" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Let's get started!">
-                                            <attributes>
-                                                <font key="NSFont" size="17" name="Helvetica"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </buttonConfiguration>
+                                <state key="normal" title="Let's get started →"/>
                                 <connections>
                                     <segue destination="Vyo-2p-EHv" kind="show" id="seS-sQ-Ojm"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SmartWallet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XiM-TE-wrY">
-                                <rect key="frame" x="157" y="177" width="101" height="106"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SmartWallet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XiM-TE-wrY">
+                                <rect key="frame" x="75" y="163" width="264" height="106"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -71,20 +52,20 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-9" y="68"/>
+            <point key="canvasLocation" x="-10.144927536231885" y="67.633928571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--TipCalculator-->
         <scene sceneID="0pg-tB-eUi">
             <objects>
-                <viewController id="XYH-uU-Ybh" sceneMemberID="viewController">
+                <viewController title="TipCalculator" id="XYH-uU-Ybh" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sws-Rx-OLF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tip Calculator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jx9-Az-3KM">
-                                <rect key="frame" x="154" y="57" width="106" height="21"/>
+                                <rect key="frame" x="118" y="56" width="179" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -96,20 +77,20 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pMG-sc-DPt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="698.55072463768124" y="-577.23214285714278"/>
+            <point key="canvasLocation" x="742" y="-588"/>
         </scene>
-        <!--View Controller-->
+        <!--PotentialPurchase-->
         <scene sceneID="SVb-jc-WXc">
             <objects>
-                <viewController id="WOm-Ok-Bqe" sceneMemberID="viewController">
+                <viewController title="PotentialPurchase" id="WOm-Ok-Bqe" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oiZ-SH-uFz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Potential Purchase" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8a-ei-4Hf">
-                                <rect key="frame" x="136" y="70" width="142" height="21"/>
+                                <rect key="frame" x="87" y="51" width="240" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -121,21 +102,21 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2zp-A9-D8P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1430" y="-577"/>
+            <point key="canvasLocation" x="1481" y="-588"/>
         </scene>
-        <!--View Controller-->
+        <!--FinanceTree-->
         <scene sceneID="7gB-yr-ChC">
             <objects>
-                <viewController id="Vyo-2p-EHv" sceneMemberID="viewController">
+                <viewController title="FinanceTree" modalPresentationStyle="fullScreen" id="Vyo-2p-EHv" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gU5-It-aPu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yVe-xf-ue6">
-                                <rect key="frame" x="38" y="44" width="56" height="31"/>
+                                <rect key="frame" x="20" y="44" width="56" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="back"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Back"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="ML9-QN-hw6"/>
                                 </connections>
@@ -143,48 +124,50 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Whh-Pr-Dmf">
                                 <rect key="frame" x="177" y="156" width="83" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Investing"/>
+                                <state key="normal" title="Investing"/>
                                 <connections>
                                     <segue destination="nxy-yt-uCH" kind="show" id="gq5-87-MUV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S4C-zA-Ldp">
-                                <rect key="frame" x="196" y="325" width="91" height="31"/>
+                                <rect key="frame" x="35" y="294" width="91" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Budgeting"/>
+                                <state key="normal" title="Budgeting"/>
                                 <connections>
                                     <segue destination="vgP-SH-b9z" kind="show" id="ldq-si-KYL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Zc-xs-yrJ">
-                                <rect key="frame" x="196" y="382" width="118" height="31"/>
+                                <rect key="frame" x="50" y="189" width="118" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Tip Calculator "/>
+                                <state key="normal" title="Tip Calculator"/>
                                 <connections>
                                     <segue destination="XYH-uU-Ybh" kind="show" id="H8F-vl-fbL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wfk-Ch-kFX">
-                                <rect key="frame" x="220" y="451" width="149" height="31"/>
+                                <rect key="frame" x="212" y="350" width="149" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Potential Purchase "/>
+                                <state key="normal" title="Potential Purchases"/>
                                 <connections>
                                     <segue destination="WOm-Ok-Bqe" kind="show" id="jEb-4S-sHY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LoG-At-DDz">
-                                <rect key="frame" x="192" y="235" width="95" height="31"/>
+                                <rect key="frame" x="274" y="229" width="95" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Retirement"/>
+                                <state key="normal" title="Retirement"/>
                                 <connections>
                                     <segue destination="b5P-zs-Coz" kind="show" id="GGv-0o-XBH"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Finance Tree" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xv2-zN-Uwl">
+                                <rect key="frame" x="86" y="75" width="264" height="106"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="USW-IL-vJ5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -193,20 +176,20 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NtD-nt-k6d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="701" y="84"/>
+            <point key="canvasLocation" x="743" y="68"/>
         </scene>
-        <!--View Controller-->
+        <!--Investing-->
         <scene sceneID="9Tj-pJ-3t6">
             <objects>
-                <viewController id="nxy-yt-uCH" sceneMemberID="viewController">
+                <viewController title="Investing" id="nxy-yt-uCH" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n1u-Zl-nZA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Investing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KIg-6b-fte">
-                                <rect key="frame" x="173" y="82" width="69" height="21"/>
+                                <rect key="frame" x="149" y="74" width="117" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -218,20 +201,20 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fq6-hA-Auu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1430.4347826086957" y="83.705357142857139"/>
+            <point key="canvasLocation" x="1497" y="68"/>
         </scene>
-        <!--View Controller-->
+        <!--Budgeting-->
         <scene sceneID="dYh-xt-4Oi">
             <objects>
-                <viewController id="vgP-SH-b9z" sceneMemberID="viewController">
+                <viewController title="Budgeting" id="vgP-SH-b9z" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ba9-32-fXb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Budgeting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZV-UC-bYq">
-                                <rect key="frame" x="168" y="55" width="79" height="21"/>
+                                <rect key="frame" x="140" y="74" width="134" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -243,32 +226,32 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="64N-Sc-x19" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="698.55072463768124" y="745.98214285714278"/>
+            <point key="canvasLocation" x="741" y="828"/>
         </scene>
-        <!--View Controller-->
+        <!--Retirement-->
         <scene sceneID="DBj-FP-QX6">
             <objects>
-                <viewController id="b5P-zs-Coz" sceneMemberID="viewController">
+                <viewController title="Retirement" id="b5P-zs-Coz" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dG8-d4-UUo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Retirement" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qk6-Lq-Xta">
-                                <rect key="frame" x="165" y="66" width="84" height="21"/>
+                                <rect key="frame" x="145" y="72" width="141" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Mxe-NY-0kP"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.76336687800000003" green="0.66435092689999997" blue="0.53366070990000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="2d5-Hd-H9a"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NPi-fx-6um" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1431.8840579710145" y="745.98214285714278"/>
+            <point key="canvasLocation" x="1496" y="828"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gZp-Sv-WVS">
@@ -282,20 +265,34 @@
                                 <rect key="frame" x="333" y="44" width="56" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="back"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="PJ5-0b-gzZ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About Us" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s79-S1-wjk">
+                                <rect key="frame" x="75" y="83" width="264" height="106"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWA-RA-rnB">
+                                <rect key="frame" x="39" y="170" width="337" height="343"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">SmartWallet is an app designed especially to inform women and people of all ages about the importance of financial literacy. With the help of both informational &amp; interactive panels, we hope that SmartWallet not only encourages the understanding of finances, but also contributes to closing the gender gap in finance. (FEEL FREE TO EDIT THIS!)</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yWJ-g0-z4a"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.65485941450276375" green="0.80281373420558366" blue="0.63708270605498674" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="qHp-2H-teR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DU2-I3-d3B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-732" y="68"/>
+            <point key="canvasLocation" x="-823.1884057971015" y="67.633928571428569"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
