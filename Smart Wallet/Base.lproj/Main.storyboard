@@ -269,6 +269,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgA-e7-0id">
+                                <rect key="frame" x="126" y="452" width="67" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="mmQ-dn-YxD" kind="show" id="RgH-SJ-lXG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="i5o-UK-uMF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -979,6 +988,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DU2-I3-d3B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-823.1884057971015" y="67.633928571428569"/>
+        </scene>
+        <!--PurchaseP View Controller-->
+        <scene sceneID="3tV-eb-hxZ">
+            <objects>
+                <viewController id="sfp-XR-dXz" customClass="PurchasePViewController" customModule="Smart_Wallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Ju-Ba-yZq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ThK-w6-3t4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Rlk-gw-25r"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zNZ-qO-nWT" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2984" y="-589"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IrA-Dz-RBw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mmQ-dn-YxD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="geo-EE-L4F"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Mp4-fz-Qc0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sfp-XR-dXz" kind="relationship" relationship="rootViewController" id="It9-e0-KAO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Om5-6o-SHI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2249" y="-589"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
