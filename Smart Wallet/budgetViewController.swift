@@ -29,7 +29,7 @@ class budgetViewController: UIViewController {
     }
     @IBAction func submitButton(_ sender: Any) {
         question.isHidden = true
-        question.isHidden = true
+        textField.isHidden = true
     }
     
 }
