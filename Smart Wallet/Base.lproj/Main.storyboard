@@ -137,9 +137,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tip Calculator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jx9-Az-3KM">
-                                <rect key="frame" x="129" y="75" width="179" height="36"/>
+                                <rect key="frame" x="129" y="75" width="183" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -404,7 +404,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RX0-VR-PNr">
                                 <rect key="frame" x="139" y="256" width="127" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Why invest?"/>
                                 <connections>
                                     <action selector="whyInvest:" destination="nxy-yt-uCH" eventType="touchUpInside" id="XFe-UC-MIR"/>
                                     <action selector="whyInvest:" destination="J6E-ik-wGQ" eventType="touchUpInside" id="ypJ-TV-uvP"/>
@@ -413,7 +413,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAO-35-1Vj">
                                 <rect key="frame" x="84" y="333" width="240" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="How to invest?"/>
                                 <connections>
                                     <action selector="howToInvest:" destination="nxy-yt-uCH" eventType="touchUpInside" id="Lkt-Wc-Ycn"/>
                                     <action selector="howToInvest:" destination="J6E-ik-wGQ" eventType="touchUpInside" id="wfy-de-XBe"/>
@@ -422,7 +422,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2D-BS-6BB">
                                 <rect key="frame" x="122" y="406" width="164" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Additional resources"/>
                                 <connections>
                                     <action selector="additionalResources:" destination="J6E-ik-wGQ" eventType="touchUpInside" id="9vg-RO-JN0"/>
                                     <action selector="additionalResources:" destination="nxy-yt-uCH" eventType="touchUpInside" id="yUN-ew-Msn"/>
@@ -439,7 +439,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwb-yC-bGb">
                                 <rect key="frame" x="93" y="168" width="219" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="What is the stock market? "/>
                                 <connections>
                                     <action selector="StockMarket:" destination="J6E-ik-wGQ" eventType="touchUpInside" id="MZG-Pk-bqw"/>
                                     <action selector="stockMarket:" destination="nxy-yt-uCH" eventType="touchUpInside" id="OhO-hK-PZW"/>
@@ -519,7 +519,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="E0x-J7-VVg">
                                 <rect key="frame" x="87" y="605" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.74770039320000004" green="0.66495865580000002" blue="0.54899907110000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.99173754449999996" green="0.96129637960000003" blue="0.93725085259999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
