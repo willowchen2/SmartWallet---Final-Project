@@ -486,6 +486,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="submit"/>
                                 <connections>
+                                    <action selector="submitButton:" destination="vgP-SH-b9z" eventType="touchUpInside" id="kl3-m4-gLS"/>
                                     <action selector="submitButtonTapped:" destination="vgP-SH-b9z" eventType="touchUpInside" id="OOo-9M-B50"/>
                                 </connections>
                             </button>
