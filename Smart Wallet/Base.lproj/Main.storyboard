@@ -481,12 +481,12 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDw-V6-d4c">
-                                <rect key="frame" x="163" y="208" width="68" height="31"/>
+                                <rect key="frame" x="148" y="208" width="83" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="submit"/>
                                 <connections>
-                                    <action selector="submitButton:" destination="vgP-SH-b9z" eventType="touchUpInside" id="f8L-AV-Ocp"/>
+                                    <action selector="submitButtonTapped:" destination="vgP-SH-b9z" eventType="touchUpInside" id="OOo-9M-B50"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is your budget?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wls-6M-blH">
@@ -502,13 +502,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="JSx-ak-zZz"/>
                     <connections>
-                        <outlet property="question" destination="wls-6M-blH" id="ryI-2I-zVe"/>
-                        <outlet property="textField" destination="wls-6M-blH" id="mca-Gb-F5D"/>
+                        <outlet property="question" destination="wls-6M-blH" id="e29-eb-CVD"/>
+                        <outlet property="textField" destination="WfJ-v8-Vcg" id="f8Y-ZD-Zv4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="64N-Sc-x19" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="741" y="828"/>
+            <point key="canvasLocation" x="740.57971014492762" y="827.67857142857144"/>
         </scene>
         <!--Retirement-->
         <scene sceneID="DBj-FP-QX6">
