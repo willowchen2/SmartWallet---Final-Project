@@ -11,6 +11,8 @@ class budgetViewController: UIViewController {
     
     @IBOutlet weak var question: UILabel!
     @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var submitButon: UIButton!
+    
     override func viewDidLoad() {
         question.isHidden = false
         textField.isHidden = false
@@ -28,8 +30,9 @@ class budgetViewController: UIViewController {
         }
     }
     @IBAction func submitButton(_ sender: Any) {
-        question.isHidden = true
+        question.isHidden = false
         textField.isHidden = true
+        submitButon.isHidden = true
     }
     
 }

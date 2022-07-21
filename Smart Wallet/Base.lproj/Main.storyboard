@@ -504,6 +504,7 @@
                     <navigationItem key="navigationItem" id="JSx-ak-zZz"/>
                     <connections>
                         <outlet property="question" destination="wls-6M-blH" id="e29-eb-CVD"/>
+                        <outlet property="submitButon" destination="DDw-V6-d4c" id="pQs-3A-r7e"/>
                         <outlet property="textField" destination="WfJ-v8-Vcg" id="f8Y-ZD-Zv4"/>
                     </connections>
                 </viewController>
