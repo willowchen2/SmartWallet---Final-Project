@@ -449,7 +449,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWT-cw-McM">
                                 <rect key="frame" x="166" y="385" width="80" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Roth IRA"/>
                                 <connections>
                                     <action selector="rothIRA:" destination="b5P-zs-Coz" eventType="touchUpInside" id="lgx-Vv-gX6"/>
                                 </connections>
@@ -457,7 +457,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcp-cJ-5cB">
                                 <rect key="frame" x="148" y="306" width="118" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Traditional IRA"/>
                                 <connections>
                                     <action selector="traditionalIRA:" destination="b5P-zs-Coz" eventType="touchUpInside" id="4pG-RB-HQC"/>
                                 </connections>
@@ -465,7 +465,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Zk-Vd-Mtj">
                                 <rect key="frame" x="176" y="215" width="61" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="401k"/>
                                 <connections>
                                     <action selector="fourK:" destination="b5P-zs-Coz" eventType="touchUpInside" id="4z0-Gm-pGP"/>
                                 </connections>
@@ -473,7 +473,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="E0x-J7-VVg">
                                 <rect key="frame" x="87" y="605" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.74770039320000004" green="0.66495865580000002" blue="0.54899907110000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -481,7 +481,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hb7-g3-vAK">
                                 <rect key="frame" x="128" y="479" width="156" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="What's right for me?"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Mxe-NY-0kP"/>
@@ -592,7 +592,7 @@
                                     <fragment>
                                         <string key="content">SmartWallet is an app designed especially to inform women and people of all ages about the importance of financial literacy. With the help of both informational &amp; interactive panels, we hope that SmartWallet not only encourages the understanding of finances, but also contributes to closing the gender gap in finance. (FEEL FREE TO EDIT THIS!)</string>
                                         <attributes>
-                                            <font key="NSFont" size="22" name=".SFNS-Regular"/>
+                                            <font key="NSFont" metaFont="system" size="22"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -606,7 +606,7 @@
                                     <fragment content="--------">
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="21" name=".SFNS-Regular"/>
+                                            <font key="NSFont" metaFont="system" size="21"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                 <tabStops/>
                                             </paragraphStyle>
@@ -624,7 +624,7 @@
                                     <fragment content=" MEET THE CREATORS ">
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="21" name=".SFNS-Regular"/>
+                                            <font key="NSFont" metaFont="system" size="21"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                 <tabStops/>
                                             </paragraphStyle>
@@ -671,7 +671,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="PJ5-0b-gzZ"/>
+        <segue reference="ML9-QN-hw6"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="165829179419515869" width="483" height="517"/>
