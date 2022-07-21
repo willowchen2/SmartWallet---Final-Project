@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -25,15 +24,6 @@
                                 <rect key="frame" x="235" y="631" width="66" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="tap to grow">
-                                            <attributes>
-                                                <font key="NSFont" size="12" name="Verdana-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="Vyo-2p-EHv" kind="show" id="YOQ-hK-VVr"/>
                                 </connections>
@@ -57,16 +47,6 @@
                                 <rect key="frame" x="115" y="656" width="78" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="about us">
-                                            <attributes>
-                                                <font key="NSFont" size="18" name="GillSans-SemiBold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="Tbz-fn-9uK" kind="show" id="aqB-f2-EUe"/>
                                 </connections>
@@ -92,27 +72,104 @@
         <!--TipCalculator-->
         <scene sceneID="0pg-tB-eUi">
             <objects>
-                <viewController title="TipCalculator" id="XYH-uU-Ybh" sceneMemberID="viewController">
+                <viewController title="TipCalculator" id="XYH-uU-Ybh" customClass="TipCalculatorViewController" customModule="Smart_Wallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sws-Rx-OLF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tip Calculator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jx9-Az-3KM">
-                                <rect key="frame" x="118" y="56" width="179" height="36"/>
+                                <rect key="frame" x="129" y="75" width="179" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Input your initial bill here:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ztj-sb-o33">
+                                <rect key="frame" x="99" y="160" width="217" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dd4-bk-kYv">
+                                <rect key="frame" x="134" y="422" width="146" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Calculate Tip"/>
+                                <connections>
+                                    <action selector="calculateTip:" destination="XYH-uU-Ybh" eventType="touchUpInside" id="WPH-Th-bK1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Input your tip percentage here:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCT-jA-LRF">
+                                <rect key="frame" x="78" y="285" width="281" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U3C-s7-mmX">
+                                <rect key="frame" x="159" y="200" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ojt-g9-6TJ">
+                                <rect key="frame" x="159" y="337" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="tip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBf-72-2RU">
+                                <rect key="frame" x="186" y="494" width="28" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RO7-Ph-aet">
+                                <rect key="frame" x="135" y="202" width="16" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LeS-0Q-iZd">
+                                <rect key="frame" x="130" y="339" width="21" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Bill will appear below:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kut-VW-7Rp">
+                                <rect key="frame" x="65" y="562" width="285" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="total bill" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vou-Ck-eXB">
+                                <rect key="frame" x="159" y="615" width="84" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DjX-IZ-TzS"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.90299087977289494" green="1" blue="0.63719006194541938" alpha="0.63214362157534243" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="Sat-xW-fqr"/>
+                    <connections>
+                        <outlet property="billAmountTxt" destination="U3C-s7-mmX" id="fDa-8T-fnO"/>
+                        <outlet property="billTotalLbl" destination="Vou-Ck-eXB" id="JUe-oK-IFC"/>
+                        <outlet property="calculateTipBtn" destination="Dd4-bk-kYv" id="2QO-Rt-trt"/>
+                        <outlet property="tipAmountLbl" destination="uBf-72-2RU" id="SR5-o6-8Dp"/>
+                        <outlet property="tipPercentTxt" destination="ojt-g9-6TJ" id="ff5-8p-pp3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pMG-sc-DPt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="742" y="-588"/>
+            <point key="canvasLocation" x="740.57971014492762" y="-588.61607142857144"/>
         </scene>
         <!--PotentialPurchase-->
         <scene sceneID="SVb-jc-WXc">
@@ -236,7 +293,6 @@
                                 <rect key="frame" x="139" y="256" width="127" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Why invest? "/>
                                 <connections>
                                     <action selector="whyInvest:" destination="nxy-yt-uCH" eventType="touchUpInside" id="XFe-UC-MIR"/>
                                     <action selector="whyInvest:" destination="J6E-ik-wGQ" eventType="touchUpInside" id="ypJ-TV-uvP"/>
@@ -246,7 +302,6 @@
                                 <rect key="frame" x="84" y="333" width="240" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="How can I invest as a beginner? "/>
                                 <connections>
                                     <action selector="howToInvest:" destination="nxy-yt-uCH" eventType="touchUpInside" id="Lkt-Wc-Ycn"/>
                                     <action selector="howToInvest:" destination="J6E-ik-wGQ" eventType="touchUpInside" id="wfy-de-XBe"/>
@@ -256,7 +311,6 @@
                                 <rect key="frame" x="122" y="406" width="164" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Additional resources"/>
                                 <connections>
                                     <action selector="additionalResources:" destination="J6E-ik-wGQ" eventType="touchUpInside" id="9vg-RO-JN0"/>
                                     <action selector="additionalResources:" destination="nxy-yt-uCH" eventType="touchUpInside" id="yUN-ew-Msn"/>
@@ -274,7 +328,6 @@
                                 <rect key="frame" x="93" y="168" width="219" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="What's the stock market? "/>
                                 <connections>
                                     <action selector="StockMarket:" destination="J6E-ik-wGQ" eventType="touchUpInside" id="MZG-Pk-bqw"/>
                                     <action selector="stockMarket:" destination="nxy-yt-uCH" eventType="touchUpInside" id="OhO-hK-PZW"/>
@@ -338,7 +391,6 @@
                                 <rect key="frame" x="166" y="385" width="80" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Roth IRA"/>
                                 <connections>
                                     <action selector="rothIRA:" destination="b5P-zs-Coz" eventType="touchUpInside" id="lgx-Vv-gX6"/>
                                 </connections>
@@ -347,7 +399,6 @@
                                 <rect key="frame" x="148" y="306" width="118" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Traditional IRA"/>
                                 <connections>
                                     <action selector="traditionalIRA:" destination="b5P-zs-Coz" eventType="touchUpInside" id="4pG-RB-HQC"/>
                                 </connections>
@@ -356,7 +407,6 @@
                                 <rect key="frame" x="176" y="215" width="61" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="401K "/>
                                 <connections>
                                     <action selector="fourK:" destination="b5P-zs-Coz" eventType="touchUpInside" id="4z0-Gm-pGP"/>
                                 </connections>
@@ -373,7 +423,6 @@
                                 <rect key="frame" x="128" y="479" width="156" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="What's right for me?"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Mxe-NY-0kP"/>

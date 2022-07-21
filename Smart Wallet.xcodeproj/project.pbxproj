@@ -14,6 +14,7 @@
 		7F138ED92887563C00C0B624 /* Smart_Wallet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F138ED72887563C00C0B624 /* Smart_Wallet.xcdatamodeld */; };
 		7F138EDB2887563D00C0B624 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F138EDA2887563D00C0B624 /* Assets.xcassets */; };
 		7F138EDE2887563D00C0B624 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F138EDC2887563D00C0B624 /* LaunchScreen.storyboard */; };
+		7F46415D2888FC42007EE435 /* TipCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F46415C2888FC42007EE435 /* TipCalculatorViewController.swift */; };
 		CB9449382888972E009C85B3 /* InvestmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9449372888972E009C85B3 /* InvestmentsViewController.swift */; };
 		CB94493A28889F58009C85B3 /* RetirementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB94493928889F58009C85B3 /* RetirementViewController.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,7 @@
 		7F138EDA2887563D00C0B624 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F138EDD2887563D00C0B624 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F138EDF2887563D00C0B624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F46415C2888FC42007EE435 /* TipCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculatorViewController.swift; sourceTree = "<group>"; };
 		CB9449372888972E009C85B3 /* InvestmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentsViewController.swift; sourceTree = "<group>"; };
 		CB94493928889F58009C85B3 /* RetirementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetirementViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,6 +70,7 @@
 				CB9449372888972E009C85B3 /* InvestmentsViewController.swift */,
 				CB94493928889F58009C85B3 /* RetirementViewController.swift */,
 				7F138ED42887563C00C0B624 /* Main.storyboard */,
+				7F46415C2888FC42007EE435 /* TipCalculatorViewController.swift */,
 				7F138EDA2887563D00C0B624 /* Assets.xcassets */,
 				7F138EDC2887563D00C0B624 /* LaunchScreen.storyboard */,
 				7F138EDF2887563D00C0B624 /* Info.plist */,
@@ -149,6 +152,7 @@
 				7F138ED92887563C00C0B624 /* Smart_Wallet.xcdatamodeld in Sources */,
 				7F138ED32887563C00C0B624 /* ViewController.swift in Sources */,
 				CB9449382888972E009C85B3 /* InvestmentsViewController.swift in Sources */,
+				7F46415D2888FC42007EE435 /* TipCalculatorViewController.swift in Sources */,
 				CB94493A28889F58009C85B3 /* RetirementViewController.swift in Sources */,
 				7F138ECF2887563C00C0B624 /* AppDelegate.swift in Sources */,
 				7F138ED12887563C00C0B624 /* SceneDelegate.swift in Sources */,
