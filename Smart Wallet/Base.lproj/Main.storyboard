@@ -1044,9 +1044,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHT-fX-tnr">
-                                <rect key="frame" x="169" y="687" width="57" height="31"/>
+                                <rect key="frame" x="166" y="687" width="64" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Calculate">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
@@ -1353,8 +1353,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">SmartWallet is an app designed especially to inform women and people of all ages about the importance of financial literacy. With the help of both informational &amp; interactive panels, we hope that SmartWallet not only encourages the understanding of finances, but also contributes to closing the gender gap in finance. (FEEL FREE TO EDIT THIS!)</string>
+                                        <string key="content">SmartWallet is an app designed especially to inform women and people of all ages about the importance of financial literacy. With the help of both informational &amp; interactive panels, we hope that SmartWallet not only encourages the understanding of finances, but also contributes to closing the gender gap in finance.</string>
                                         <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <font key="NSFont" metaFont="system" size="22"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -1473,7 +1474,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ML9-QN-hw6"/>
+        <segue reference="PJ5-0b-gzZ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="165837923919758128" width="542" height="460"/>
