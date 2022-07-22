@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -110,13 +109,6 @@
                                 <rect key="frame" x="-21" y="341" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="✎ click on the watering can to learn about our care" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOE-Sh-mkd">
-                                <rect key="frame" x="163" y="308" width="231" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Times-Bold" family="Times" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="✎ click on the gust of wind to learn about the gender gap in financial literacy" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2g-hO-MIa">
                                 <rect key="frame" x="20" y="134" width="231" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -128,13 +120,20 @@
                                 <rect key="frame" x="228" y="120" width="166" height="103"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="XRR-UD-hfU" kind="show" id="4ON-rD-2Jn"/>
+                                    <segue destination="5JG-Q3-ryw" kind="show" id="NaO-8n-h56"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="165842352527579282-bt-13-1-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="tyw-Xi-BAB">
                                 <rect key="frame" x="293" y="829" width="152" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="✎ click on the watering can to learn about our care" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOE-Sh-mkd">
+                                <rect key="frame" x="145" y="319" width="231" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Times-Bold" family="Times" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.98668014410870564" green="1" blue="0.96940765680784613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -146,15 +145,85 @@
             </objects>
             <point key="canvasLocation" x="-10.144927536231885" y="67.633928571428569"/>
         </scene>
-        <!--GenderGap-->
-        <scene sceneID="x3G-AN-ngn">
+        <!--View Controller-->
+        <scene sceneID="lAj-nQ-eSq">
             <objects>
-                <viewController title="GenderGap" id="XRR-UD-hfU" customClass="GenderGapViewController" customModule="Smart_Wallet" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="xeE-G9-LqR"/>
+                <viewController id="5JG-Q3-ryw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p0l-oc-Jwo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Op-3Z-Bzq">
+                                <rect key="frame" x="20" y="20" width="343" height="106"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="THE GENDER GAP IN FINANCE">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="29" name="Futura-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ayX-44-xgz">
+                                <rect key="frame" x="40" y="134" width="334" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="◦ The Reasoning◦">
+                                        <attributes>
+                                            <font key="NSFont" size="28" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9SF-0D-Ula">
+                                <rect key="frame" x="52" y="188" width="316" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">The lack of role models women have in finance makes it hard for those entering the field, resulting in the finance industry being male dominated.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCI-RY-l9O">
+                                <rect key="frame" x="29" y="357" width="334" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="◦ The Solution◦">
+                                        <attributes>
+                                            <font key="NSFont" size="28" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38j-Mr-aXX">
+                                <rect key="frame" x="55" y="413" width="311" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">By educating women of all ages about the importance of financial literacy, not only is our app promoting wiser account management, but also helping to close the gender gap in finance.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="165842352527579282-bt-13-1-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="Gy4-r5-tH1">
+                                <rect key="frame" x="288" y="769" width="152" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tXU-Y1-uRn"/>
+                        <color key="backgroundColor" red="0.97934550050000002" green="0.97252693158557701" blue="0.75943543917163692" alpha="0.9904484160958904" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="n4H-aL-oUr"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3Vd-KW-7Ha" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fC8-kl-1ti" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-59.420289855072468" y="-652.23214285714278"/>
+            <point key="canvasLocation" x="-152.17391304347828" y="-631.47321428571422"/>
         </scene>
         <!--TipCalculator-->
         <scene sceneID="0pg-tB-eUi">
@@ -384,24 +453,6 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgA-e7-0id">
-                                <rect key="frame" x="56" y="450" width="302" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.086617304634357226" green="0.12688751014119332" blue="0.27834038919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="click here to make your list">
-                                            <attributes>
-                                                <font key="NSFont" size="24" name="Times-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="mmQ-dn-YxD" kind="show" id="RgH-SJ-lXG"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="165842352527579282-bt-13-1-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="YeM-bd-dJ4">
                                 <rect key="frame" x="292" y="774" width="152" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -453,6 +504,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgA-e7-0id">
+                                <rect key="frame" x="97" y="515" width="131" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="tintColor" red="0.086617304634357226" green="0.12688751014119332" blue="0.27834038919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Click here"/>
+                                <connections>
+                                    <segue destination="mmQ-dn-YxD" kind="show" id="RgH-SJ-lXG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="i5o-UK-uMF"/>
                         <color key="backgroundColor" red="0.91067567751683398" green="0.92650980141414307" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -613,7 +674,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="Why invest?">
                                             <attributes>
-                                                <font key="NSFont" size="20" name="Times-Bold"/>
+                                                <font key="NSFont" size="22" name="Times-Bold"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -630,7 +691,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="How to invest?">
                                             <attributes>
-                                                <font key="NSFont" size="20" name="Times-Bold"/>
+                                                <font key="NSFont" size="22" name="Times-Bold"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -647,7 +708,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="Additional resources">
                                             <attributes>
-                                                <font key="NSFont" size="20" name="Times-Bold"/>
+                                                <font key="NSFont" size="22" name="Times-Bold"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -672,7 +733,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="What is the stock market? ">
                                             <attributes>
-                                                <font key="NSFont" size="20" name="Times-Bold"/>
+                                                <font key="NSFont" size="22" name="Times-Bold"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -711,7 +772,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download-5-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="NzQ-2v-0oQ">
-                                <rect key="frame" x="272" y="471" width="142" height="70"/>
+                                <rect key="frame" x="280" y="467" width="142" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -963,7 +1024,6 @@
                                 <rect key="frame" x="169" y="687" width="57" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="total:"/>
                                 <connections>
                                     <action selector="calculate:" destination="vgP-SH-b9z" eventType="touchUpInside" id="uvz-7M-lJw"/>
                                 </connections>
@@ -1056,13 +1116,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dWT-cw-McM">
-                                <rect key="frame" x="128" y="389" width="176" height="31"/>
+                                <rect key="frame" x="128" y="382" width="176" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Roth IRA">
                                             <attributes>
-                                                <font key="NSFont" size="20" name="Times-Bold"/>
+                                                <font key="NSFont" size="24" name="Times-Bold"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -1072,13 +1132,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lcp-cJ-5cB">
-                                <rect key="frame" x="131" y="314" width="153" height="31"/>
+                                <rect key="frame" x="131" y="300" width="173" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Traditional IRA">
                                             <attributes>
-                                                <font key="NSFont" size="20" name="Times-Bold"/>
+                                                <font key="NSFont" size="24" name="Times-Bold"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -1094,7 +1154,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="401k">
                                             <attributes>
-                                                <font key="NSFont" size="20" name="Times-Bold"/>
+                                                <font key="NSFont" size="24" name="Times-Bold"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -1112,19 +1172,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hb7-g3-vAK">
-                                <rect key="frame" x="103" y="484" width="208" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="What's right for me?">
-                                            <attributes>
-                                                <font key="NSFont" size="20" name="Times-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFS-JT-RM4">
                                 <rect key="frame" x="32" y="11" width="281" height="106"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1150,13 +1197,26 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="Lt6-lX-eXq">
-                                <rect key="frame" x="75" y="672" width="194" height="101"/>
+                                <rect key="frame" x="20" y="696" width="194" height="101"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download-3-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="zWS-U3-Bgr">
                                 <rect key="frame" x="271" y="285" width="172" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hb7-g3-vAK">
+                                <rect key="frame" x="104" y="470" width="224" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="What's right for me?">
+                                            <attributes>
+                                                <font key="NSFont" size="24" name="Times-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Mxe-NY-0kP"/>
                         <color key="backgroundColor" red="0.91969692617815346" green="0.965819625449445" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1331,7 +1391,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="cecilia        willow          christina" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xWS-h8-tx3">
-                                <rect key="frame" x="100" y="609" width="238" height="43"/>
+                                <rect key="frame" x="88" y="609" width="238" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
